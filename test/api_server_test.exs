@@ -33,6 +33,7 @@ defmodule SpandexDatadog.ApiServerTest do
         id: 4_743_028_846_331_200_906,
         start: 1_527_752_052_216_478_000,
         service: :foo,
+        service_version: "v1",
         env: "local",
         name: "foo",
         trace_id: trace_id,
@@ -103,6 +104,7 @@ defmodule SpandexDatadog.ApiServerTest do
             "buz" => "blitz",
             "env" => "local",
             "foo" => "123",
+            "version" => "v1",
             "zyx" => "[xyz: {1, 2}]"
           },
           "metrics" => %{
@@ -185,6 +187,7 @@ defmodule SpandexDatadog.ApiServerTest do
             "buz" => "blitz",
             "env" => "local",
             "foo" => "123",
+            "version" => "v1",
             "zyx" => "[xyz: {1, 2}]"
           },
           "metrics" => %{

@@ -61,7 +61,7 @@ defmodule SpandexDatadog.MixProject do
       {:excoveralls, "~> 0.10", only: :test},
       {:git_ops, "~> 2.0", only: [:dev]},
       {:inch_ex, "~> 2.0", only: [:dev, :test]},
-      {:spandex, "~> 3.0"},
+      {:spandex, github: "kamilkowalski/spandex", branch: "add-version-support"},
       {:httpoison, "~> 0.13", only: :test},
       {:msgpax, "~> 2.2.1"}
     ]
